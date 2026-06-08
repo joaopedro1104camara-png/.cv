@@ -1,0 +1,91 @@
+\documentclass[10pt,a4paper,withhyper]{altacv}
+
+\usepackage{paracol}
+
+\iftutex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% ===== CORES =====
+\definecolor{DarkBlue}{HTML}{0B1F3A}
+\definecolor{MidBlue}{HTML}{163A6B}
+\definecolor{LightBlue}{HTML}{4F81BD}
+\definecolor{BodyGrey}{HTML}{444444}
+
+\colorlet{name}{black}
+\colorlet{tagline}{MidBlue}
+\colorlet{heading}{DarkBlue}
+\colorlet{headingrule}{LightBlue}
+\colorlet{subheading}{MidBlue}
+\colorlet{accent}{LightBlue}
+\colorlet{body}{BodyGrey}
+
+\renewcommand{\namefont}{\Huge\bfseries}
+\renewcommand{\cvsectionfont}{\Large\bfseries}
+
+\begin{document}
+
+\name{João Pedro Miranda Câmara}
+\tagline{Graduando em Astronomia — UFRJ}
+
+\personalinfo{
+  \email{joao24@ov.ufrj.br}
+  \location{Rio de Janeiro, Brasil}
+  \xtwitter{@Pedrottsx}
+  \printinfo{\faInstagram}{\href{https://instagram.com/jpcamaracrvg}{@jpcamaracrvg}}
+  \linkedin{jpcamara}
+}
+
+% SATURNO
+\photoR{2.8cm}{saturno.jpg}
+
+\makecvheader
+
+\cvsection{Projetos}
+
+\cvevent{Criação de um eletroscópio caseiro}{}{}{}
+
+\begin{itemize}
+\item Experimento demonstrando eletrização por atrito e indução eletrostática.
+\end{itemize}
+
+\divider
+
+\cvevent{Apresentação sobre Física Quântica}{}{}{}
+
+Apresentação realizada durante o Ensino Médio abordando conceitos introdutórios de Física Quântica.
+
+\cvsection{Habilidades}
+
+\cvtag{Python}
+\cvtag{Cálculo}
+\cvtag{Criatividade}
+
+\medskip
+
+\cvsection{Idiomas}
+
+\cvskill{Português}{5}
+\divider
+\cvskill{Inglês}{4}
+\divider
+\cvskill{Espanhol}{2.5}
+
+\cvsection{Formação}
+
+\cvevent
+{Graduando em Astronomia}
+{UFRJ}
+{Jan 2024 -- Atual}
+{Rio de Janeiro}
+\cvsection{Referências}
+
+Prof.\ Bruno Morgado — Observatório do Valongo (UFRJ), Rio de Janeiro, Brasil
+
+\end{document}
